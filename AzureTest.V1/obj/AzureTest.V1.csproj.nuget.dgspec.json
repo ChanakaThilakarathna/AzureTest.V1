@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ChanakaThilakarathna\\Desktop\\Azure\\Source\\Repo\\AzureTest\\AzureTest.V1\\AzureTest.V1.csproj": {}
+    "C:\\Users\\ChanakaThilakarathna\\Documents\\GitHub\\AzureTest.V1\\AzureTest.V1\\AzureTest.V1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ChanakaThilakarathna\\Desktop\\Azure\\Source\\Repo\\AzureTest\\AzureTest.V1\\AzureTest.V1.csproj": {
+    "C:\\Users\\ChanakaThilakarathna\\Documents\\GitHub\\AzureTest.V1\\AzureTest.V1\\AzureTest.V1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ChanakaThilakarathna\\Desktop\\Azure\\Source\\Repo\\AzureTest\\AzureTest.V1\\AzureTest.V1.csproj",
+        "projectUniqueName": "C:\\Users\\ChanakaThilakarathna\\Documents\\GitHub\\AzureTest.V1\\AzureTest.V1\\AzureTest.V1.csproj",
         "projectName": "AzureTest.V1",
-        "projectPath": "C:\\Users\\ChanakaThilakarathna\\Desktop\\Azure\\Source\\Repo\\AzureTest\\AzureTest.V1\\AzureTest.V1.csproj",
+        "projectPath": "C:\\Users\\ChanakaThilakarathna\\Documents\\GitHub\\AzureTest.V1\\AzureTest.V1\\AzureTest.V1.csproj",
         "packagesPath": "C:\\Users\\ChanakaThilakarathna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ChanakaThilakarathna\\Desktop\\Azure\\Source\\Repo\\AzureTest\\AzureTest.V1\\obj\\",
+        "outputPath": "C:\\Users\\ChanakaThilakarathna\\Documents\\GitHub\\AzureTest.V1\\AzureTest.V1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -45,11 +45,27 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
+            "Microsoft.Azure.KeyVault.Core": {
+              "target": "Package",
+              "version": "[3.0.5, )"
+            },
+            "Microsoft.Azure.Services.AppAuthentication": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.AzureKeyVault": {
               "target": "Package",
               "version": "[3.1.1, )"
             },
