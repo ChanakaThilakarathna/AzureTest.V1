@@ -1,0 +1,35 @@
+﻿@page "/"
+@using BlazorFileUploader
+@using AzureTest.V1.Services
+@using AzureTest.V1.Data.Dtos
+@using AzureTest.V1.Data.Enums
+@inject IFileUpload fileUpload
+
+<div class="form-group">
+    <label for="exampleFormControlFile1"> Fle Input</label>
+    <InputFile OnChange="HandleFileSelected" class="form-control-file" />
+</div>
+
+@if (response.Responsetype==ResponseTypes.Success)
+{
+    <div class="alert alert-primary" role="alert">
+        <p class="font-weight-light">File Path : @response.SavedPath</p>
+    </div>
+}
+else if(response.Responsetype==ResponseTypes.Fail) {
+    <div class="alert alert-warning" role="alert">
+        File Upload Unsuccessful!
+    </div>
+}
+@code {
+    UploadFileResponse response= new UploadFileResponse();
+    IFileListEntry file;
+    async Task HandleFileSelected(IFileListEntry[] files)
+    {
+        file = files.FirstOrDefault();
+        if (file != null)
+        {
+            response = await fileUpload.UploadAsync(file);
+        }
+    }
+}
